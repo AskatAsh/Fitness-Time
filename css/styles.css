@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    /* colors */
+    --primary-orange: #E6533C;
+    --black-full: #000000;
+    --black-20: rgba(0, 0, 0, 0.2);
+    --almost-black: #111111;
+    --dark-gray: #777777;
+    --dark-gray-two: #222222;
+    --white-full: #ffffff;
+    --half-white: rgba(255, 255, 255, 0.5);
+    --white-10: rgba(255, 255, 255, 0.1);
+    --white-60: rgba(255, 255, 255, 0.6);
+
+    /* typography */
+    --font-78: 4.875rem;
+    --font-48: 3rem;
+    --font-36: 2.25rem;
+    --font-32: 2rem;
+    --font-28: 1.75rem;
+    --font-24: 1.5rem;
+    --font-18: 1.125rem;
+    --font-16: 1rem;
+    --font-14: 0.875rem;
+    --line-height-18: 18px;
+    --line-height-24: 24px;
+    --line-height-120: 120%;
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    --extrabold: 800;
+    --black: 900;
+
+    /* spacing */
+    --mt-14: 0.875rem;
+    --radius-18: 1.125rem;
+    --word-space-3: 0.3px;
+    --word-space-5: 0.5px;
+}
+
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* utility classes */
+body{
+    background-color: var(--black-full);
+}
+.section-title{
+    font-size: var(--font-48);
+    font-weight: var(--black);
+    line-height: var(--line-height-120);
+}
+.section-subtitle{
+    font-size: var(--font-14);
+    font-weight: var(--regular);
+    word-spacing: var(--word-space-3);
+}
+.button{
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 50%;
+    font-size: var(--font-18);
+    font-weight: var(--semibold);
+    color: var(--white-full);
+}
+.button-primary{
+    background-color: var(--primary-orange);
+}
+.button-secondary{
+    border: 1px solid var(--white-full);
+    background-color: transparent;
+}
+.input-primary{
+    padding: 0.75rem 1.25rem;
+    font-size: var(--regular);
+    border-radius: 0.5rem;
+    background-color: var(--white-60);
+}

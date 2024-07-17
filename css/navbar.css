@@ -1,0 +1,90 @@
+header{
+    width: 100%;
+    max-height: 840px;
+    height: 100vh;
+    background-image: linear-gradient(var(--almost-black) 50%, rgba(119, 119, 119, 0));
+    margin: 0 auto;
+    overflow: hidden;
+}
+header nav{
+    max-width: 1060px;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+    padding-block: 3rem 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .logo{
+    color: var(--primary-orange);
+    font-size: var(--font-36);
+    font-style: italic;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+    border: 1px solid var(--white-10);
+    border-radius: 30px;
+}
+header nav ul li ul{
+    padding: 0.25rem;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    padding: 0.5rem 1.25rem;
+    display: block;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: var(--font-18);
+    font-weight: var(--regular);
+    color: var(--white-full);
+}
+header nav ul li a:hover{
+    background-color: var(--primary-orange);
+}
+.menu-icon label{
+    display: none;
+}
+.menu-icon input[type="checkbox"]{
+    display: none;
+}
+.menu-icon label:hover{
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px){
+    header nav ul{
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 576px) {
+    .menu-icon label{
+        display: block;
+    }
+    header nav > ul{
+        position: relative;
+        border: none;
+    }
+    header nav ul > li a{
+        border-radius: 8px;
+    }
+    header nav ul > li > ul{
+        background-color: var(--dark-gray-two);
+        border-radius: 8px;
+        position: absolute;
+        right: -500px;
+        top: 120%;
+        flex-direction: column;
+        z-index: 99;
+        transition: right 200ms;
+    }
+    nav ul li.menu-icon input:checked + label + ul{
+        right: 0px;
+    }
+}
