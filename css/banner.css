@@ -1,0 +1,55 @@
+@font-face{
+    font-family: Miama;
+    src: url('../fonts/Miama.ttf');
+}
+
+#banner-section{
+    max-width: 1060px;
+    width: 90%;
+    margin-inline: auto;
+}
+#banner-section .banner-info{
+    max-width: 520px;
+    width: 100%;
+    border: 2px solid greenyellow;
+}
+#banner-section .banner-info .banner-title{
+    color: var(--white-full);
+    font-size: var(--font-78);
+    font-weight: var(--black);
+    line-height: 100px;
+}
+#banner-section .banner-info .banner-title span{
+    font-size: 10rem;
+    font-family: Miama, serif;
+    font-weight: 100;
+}
+#banner-section .banner-info .banner-description{
+    color: var(--white-60);
+    line-height: var(--line-height-24);
+    word-spacing: var(--word-space-5);
+    margin-block: 28px;
+}
+#banner-section .banner-info .cta-buttons{
+    display: flex;
+    gap: 0.875rem;
+}
+
+@media screen and (max-width: 576px) {
+    #banner-section .banner-info .banner-title{
+        max-width: 300px;
+        font-size: var(--font-48);
+        line-height: 60px;
+    }
+    #banner-section .banner-info .banner-title span{
+        font-size: 6rem;
+        font-family: Miama, serif;
+    }
+    #banner-section .banner-info .banner-description{
+        max-width: 280px;
+    }
+    #banner-section .banner-info .button{
+        font-size: 1rem;
+        padding: 0.75rem 1.25rem;
+    }
+}
