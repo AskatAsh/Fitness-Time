@@ -92,7 +92,7 @@
 }
 
 /* responsive codes */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     #banner-section{
         flex-direction: column;
         align-items: center;

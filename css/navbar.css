@@ -49,7 +49,7 @@ header nav ul li a:hover{
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px){
     header nav ul{
         gap: 0;
         justify-content: space-between;
