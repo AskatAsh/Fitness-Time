@@ -1,9 +1,54 @@
-#habits-section {}
-
+#habits-section {
+    border: 2px solid lightseagreen;
+}
 #habits-section > .section-title, .section-subtitle{
     text-align: center;
 }
 #habits-section .section-subtitle{
-    max-width: 670px;
+    max-width: 640px;
+    margin-inline: auto;
+    line-height: var(--line-height-24);
     width: 100%;
+    margin-block: 0.875rem 3.75rem;
+    word-spacing: var(--word-space-3);
+}
+#habits-section .habits-container{
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, 230px);
+    justify-content: center;
+}
+#habits-section .habits-container .habit .image-container {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--white-10);
+    margin-inline: auto;
+    margin-bottom: 1.875rem;
+}
+#habits-section .habits-container .habit .image-container img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+#habits-section .habits-container .habit .text-container h3{
+    color: var(--white-full);
+    font-size: var(--font-18);
+    font-weight: var(--semibold);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+#habits-section .habits-container .habit .text-container p{
+    color: var(--half-white);
+    font-size: var(--font-14);
+    font-weight: var(--regular);
+    text-align: center;
+    line-height: var(--line-height-18);
+    word-spacing: var(--word-space-3);
+}
+@media screen and (max-width: 992px) {
+    #habits-section .section-subtitle{
+        max-width: 480px;
+    }
 }
