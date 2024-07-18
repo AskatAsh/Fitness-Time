@@ -7,11 +7,67 @@
     max-width: 1060px;
     width: 90%;
     margin-inline: auto;
+    display: flex;
+    /* gap: 5rem; */
+    justify-content: space-between;
 }
 #banner-section .banner-info{
     max-width: 520px;
     width: 100%;
     border: 2px solid greenyellow;
+}
+#banner-section .banner-image{
+    width: fit-content;
+    border: 2px solid orange;
+    max-width: 350px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+#banner-section .banner-image .badge{
+    position: absolute;
+    top: 0;
+    color: var(--white-full);
+    border-radius: 0.75rem;
+    border: 1px solid var(--white-10);
+    padding: 1.25rem;
+    height: fit-content;
+    width: fit-content;
+    backdrop-filter: blur(20px);
+}
+#banner-section .banner-image .badge span{
+    font-size: 0.875rem;
+    color: var(--white-60);
+}
+#banner-section .banner-image .badge-1{
+    top: 5%;
+    right: -20px;
+    background-color: var(--white-10);
+}
+#banner-section .banner-image .badge-1 strong{
+    font-size: 2.75rem;
+    font-weight: var(--black);
+}
+#banner-section .banner-image .badge-2{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    top: 60%;
+    left: -40px;
+    background-color: rgba(48, 48, 48, 0.3);
+}
+#banner-section .banner-image .badge-2 strong{
+    font-size: 1.75rem;
+    font-weight: var(--black);
+}
+#banner-section .banner-image .badge-2 img{
+    width: 40px;
+}
+#banner-section .banner-image img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
 }
 #banner-section .banner-info .banner-title{
     color: var(--white-full);
@@ -35,6 +91,14 @@
     gap: 0.875rem;
 }
 
+/* responsive codes */
+@media screen and (max-width: 768px) {
+    #banner-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+}
 @media screen and (max-width: 576px) {
     #banner-section .banner-info .banner-title{
         max-width: 300px;
@@ -51,5 +115,28 @@
     #banner-section .banner-info .button{
         font-size: 1rem;
         padding: 0.75rem 1.25rem;
+    }
+    #banner-section .banner-image .badge{
+        padding: 0.75rem;
+    }
+    #banner-section .banner-image .badge-1{
+        top: 2%;
+        right: 3%;
+    }
+    #banner-section .banner-image .badge-2{
+        top: 45%;
+        left: 10px;
+    }
+    #banner-section .banner-image .badge-1 strong{
+        font-size: 1.75rem;
+    }
+    #banner-section .banner-image .badge-2 strong{
+        font-size: 1.25rem;
+    }
+    #banner-section .banner-image .badge span{
+        font-size: 0.75rem;
+    }
+    #banner-section .banner-image .badge-2 img{
+        width: 30px;
     }
 }
