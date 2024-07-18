@@ -81,3 +81,15 @@ body{
     border-radius: 0.5rem;
     background-color: var(--white-60);
 }
+.section-title{
+    font-size: var(--font-48);
+    font-weight: var(--black);
+    color: var(--white-full);
+}
+.section-subtitle{
+    font-size: var(--font-14);
+    font-weight: var(--regular);
+    color: var(--half-white);
+    line-height: var(--line-height-24);
+    word-spacing: var(--word-space-3);
+}
