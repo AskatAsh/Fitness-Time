@@ -1,0 +1,9 @@
+#habits-section {}
+
+#habits-section > .section-title, .section-subtitle{
+    text-align: center;
+}
+#habits-section .section-subtitle{
+    max-width: 670px;
+    width: 100%;
+}

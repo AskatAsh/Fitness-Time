@@ -4,8 +4,6 @@
 }
 
 #banner-section{
-    max-width: 1060px;
-    width: 90%;
     margin-inline: auto;
     display: flex;
     /* gap: 5rem; */

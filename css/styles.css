@@ -93,3 +93,8 @@ body{
     line-height: var(--line-height-24);
     word-spacing: var(--word-space-3);
 }
+.section-container{
+    max-width: 1060px;
+    width: 90%;
+    margin-inline: auto;
+}
