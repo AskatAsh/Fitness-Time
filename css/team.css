@@ -1,0 +1,78 @@
+#teams-section .section-title {
+  text-align: center;
+}
+#teams-section .section-subtitle {
+  text-align: center;
+  margin-block: 0.875rem 3.75rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+#teams-section .team-container {
+  --overlay: rgba(0, 0, 0, 0.2);
+
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background-color: var(--white-10);
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+#teams-section .team-container .team-member {
+  color: var(--white-full);
+  padding: 1.25rem;
+  height: 270px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  position: relative;
+  border-radius: 0.875rem;
+  position: relative;
+}
+.team-member:nth-child(1){
+    background-image: linear-gradient(var(--overlay), var(--overlay)),
+    url("../images/trainer1.png");
+}
+.team-member:nth-child(2){
+    background-image: linear-gradient(var(--overlay), var(--overlay)),
+    url("../images/trainer2.png");
+}
+.team-member:nth-child(3){
+    background-image: linear-gradient(var(--overlay), var(--overlay)),
+    url("../images/trainer3.png");
+}
+.team-member:nth-child(4){
+    background-image: linear-gradient(var(--overlay), var(--overlay)),
+    url("../images/trainer4.png");
+}
+.team-member:nth-child(5){
+    background-image: linear-gradient(var(--overlay), var(--overlay)),
+    url("../images/trainer5.png");
+}
+.team-member:nth-child(6){
+    background-image: linear-gradient(var(--overlay), var(--overlay)),
+    url("../images/trainer6.png");
+}
+#teams-section .team-container .team-member .member-info {
+  position: absolute;
+  inset: 0;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  top: auto;
+}
+#teams-section .team-container .team-member .member-info strong {
+  display: inline-block;
+  font-size: 1.25rem;
+}
+#teams-section .team-container .team-member .member-info span {
+  display: inline-block;
+  padding-top: 0.5rem;
+  color: var(--half-white);
+}
+
+@media screen and (max-width: 576px) {
+  #teams-section .team-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
