@@ -12,11 +12,9 @@
 #banner-section .banner-info{
     max-width: 520px;
     width: 100%;
-    border: 2px solid greenyellow;
 }
 #banner-section .banner-image{
     width: fit-content;
-    border: 2px solid orange;
     max-width: 350px;
     width: 100%;
     position: relative;
