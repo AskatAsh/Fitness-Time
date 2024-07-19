@@ -1,10 +1,10 @@
 #habits-section {
     border: 2px solid lightseagreen;
 }
-#habits-section > .section-title, .section-subtitle{
+#habits-section > .section-title, #habits-section > .section-subtitle{
     text-align: center;
 }
-#habits-section .section-subtitle{
+#habits-section > .section-subtitle{
     max-width: 640px;
     margin-inline: auto;
     line-height: var(--line-height-24);
