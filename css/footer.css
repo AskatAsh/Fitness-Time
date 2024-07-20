@@ -45,4 +45,7 @@ footer .copyright-text{
         flex-wrap: wrap;
         justify-content: flex-start;
     }
+    #footer-section .left-content .logo{
+        font-size: var(--font-48);
+    }
 }

@@ -3,6 +3,7 @@
 }
 #bmi-section > .section-title, #bmi-section > .section-subtitle {
     max-width: 600px;
+    width: 90%;
     margin-inline: auto;
 }
 #bmi-section .bmi-container .calculator-container{
@@ -99,5 +100,8 @@
     }
     .calculator-container .bmi-chart table{
         margin-top: 2rem;
+    }
+    .bmi-calculator .button-primary{
+        max-width: 240px;
     }
 }
