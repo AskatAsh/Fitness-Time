@@ -32,6 +32,7 @@
     transform: scale(1.5);
 }
 
+/* responsive codes */
 @media screen and (max-width: 992px) {
     #join-now-section{
         gap: 65px;

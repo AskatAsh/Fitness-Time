@@ -22,13 +22,9 @@ header nav ul{
 header nav ul li ul{
     padding: 0.25rem;
 }
-header nav ul li{
-    list-style-type: none;
-}
 header nav ul li a{
     padding: 0.5rem 1.25rem;
     display: block;
-    text-decoration: none;
     border-radius: 20px;
     font-size: var(--font-18);
     font-weight: var(--regular);
@@ -47,7 +43,7 @@ header nav ul li a:hover{
     cursor: pointer;
 }
 
-/* Responsive Design */
+/* responsive codes */
 @media screen and (max-width: 992px){
     header nav ul{
         gap: 0;
