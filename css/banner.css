@@ -109,8 +109,9 @@
         max-width: 280px;
     }
     #banner-section .banner-info .button{
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        font-weight: var(--regular);
+        padding: 0.875rem 1.5rem;
     }
     #banner-section .banner-image .badge{
         padding: 0.75rem;

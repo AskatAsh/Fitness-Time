@@ -75,7 +75,7 @@ body{
 .button-secondary{
     border: 1px solid var(--white-full);
     background-color: transparent;
-    transition: 300ms;
+    transition: 200ms;
 }
 .button-primary:hover, .button-secondary:hover{
     transform: scale(1.02);
