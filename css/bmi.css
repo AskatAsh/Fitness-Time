@@ -104,4 +104,7 @@
     .bmi-calculator .button-primary{
         max-width: 240px;
     }
+    .bmi-chart h4, .bmi-calculator h4{
+        font-size: var(--font-24);
+    }
 }
