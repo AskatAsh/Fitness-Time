@@ -101,3 +101,9 @@ body{
     width: 90%;
     margin-inline: auto;
 }
+ul li{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+}
