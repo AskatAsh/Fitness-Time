@@ -78,8 +78,11 @@ body{
 .input-primary{
     padding: 0.75rem 1.25rem;
     font-size: var(--regular);
+    border: none;
     border-radius: 0.5rem;
-    background-color: var(--white-60);
+    background-color: var(--white-10);
+    color: var(--white-60);
+    outline: none;
 }
 .section-title{
     font-size: var(--font-48);

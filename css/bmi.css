@@ -1,0 +1,103 @@
+#bmi-section > .section-subtitle{
+    margin-block: 0.875rem 3.75rem;;
+}
+#bmi-section > .section-title, #bmi-section > .section-subtitle {
+    max-width: 600px;
+    margin-inline: auto;
+}
+#bmi-section .bmi-container .calculator-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+#bmi-section .bmi-container{
+    width: 100%;
+    background-color: var(--dark-gray-two);
+    padding-block: 3rem;
+}
+#bmi-section .bmi-container .calculator-container .bmi-chart{
+    flex: 1;
+}
+.bmi-chart h4, .bmi-calculator h4{
+    color: var(--white-full);
+    font-size: var(--font-28);
+    font-weight: var(--black);
+}
+
+/* right side calculator */
+#bmi-section .bmi-container .calculator-container .bmi-calculator{
+    flex: 2;
+}
+.bmi-calculator .section-subtitle{
+    padding-block: 0.875rem 2rem;
+    max-width: 600px;
+}
+.bmi-calculator form{
+    display: grid;
+    grid-template-areas: 
+    'a b'
+    'c d'
+    'e e';
+    gap: 0.75rem;
+}
+.bmi-calculator form input, .bmi-calculator form select{
+    width: 100%;
+}
+.bmi-calculator form input[type='text']:nth-child(1){
+    grid-area: a;
+}
+.bmi-calculator form input[type='text']:nth-child(2){
+    grid-area: b;
+}
+.bmi-calculator form input[type='text']:nth-child(3){
+    grid-area: c;
+}
+.bmi-calculator form #sex{
+    grid-area: d;
+}
+.bmi-calculator form #activity-factor{
+    grid-area: e;
+}
+.bmi-calculator form select{
+    color: var(--dark-gray);
+}
+.bmi-calculator .button-primary{
+    max-width: 300px;
+    width: 100%;
+    margin-top: 2.75rem;
+}
+
+/* left side chart */
+#bmi-section .bmi-container .calculator-container .bmi-chart{
+    flex: 1;
+}
+.calculator-container .bmi-chart table{
+    border: 0.5px solid var(--white-10);
+    margin-top: 3rem;
+    max-width: 320px;
+    width: 100%;
+}
+.calculator-container .bmi-chart table tr{
+    color: var(--dark-gray);
+}
+.calculator-container .bmi-chart table tr td{
+    padding: 0.75rem 1rem;
+    border: 0.5px solid var(--white-10);
+    font-size: var(--font-14);
+}
+.calculator-container .bmi-chart table tr:first-of-type td{
+    color: var(--white-60);
+    font-weight: var(--semibold);
+}
+
+/* responsive codes */
+@media screen and (max-width: 992px) {
+    #bmi-section .bmi-container .calculator-container{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .calculator-container .bmi-chart table{
+        margin-top: 2rem;
+    }
+}
