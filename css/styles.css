@@ -70,10 +70,17 @@ body{
 }
 .button-primary{
     background-color: var(--primary-orange);
+    transition: 300ms;
 }
 .button-secondary{
     border: 1px solid var(--white-full);
     background-color: transparent;
+    transition: 300ms;
+}
+.button-primary:hover, .button-secondary:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 4px 8px var(--black-20);
+    cursor: pointer;
 }
 .input-primary{
     padding: 0.75rem 1.25rem;
