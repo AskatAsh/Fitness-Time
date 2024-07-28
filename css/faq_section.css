@@ -5,7 +5,7 @@
     margin-inline: auto;
 }
 #faq-section .section-subtitle{
-    margin-block: 1.25rem 1.875rem;
+    margin-block: 0.875rem 3.75rem;;
 }
 #accordion-container, #accordion-container ul, .accordion-title, .accordion-title > label{
     display: flex;
