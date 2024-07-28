@@ -1,3 +1,12 @@
+#faq-section .section-title, #faq-section .section-subtitle{
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    margin-inline: auto;
+}
+#faq-section .section-subtitle{
+    margin-block: 1.25rem 1.875rem;
+}
 #accordion-container, #accordion-container ul, .accordion-title, .accordion-title > label{
     display: flex;
 }
@@ -6,7 +15,7 @@
     justify-content: center;
 }
 #accordion-container ul{
-    max-width: 600px;
+    max-width: 800px;
     width: 90%;
     flex-direction: column;
     gap: 0.875rem;
@@ -49,4 +58,20 @@
 }
 #accordion-container ul li input:checked + label > span{
     transform: rotate(45deg);
+}
+
+/* responsive codes */
+@media screen and (max-width: 576px) {
+    #faq-section .section-title{
+        font-size: 2.25rem;
+    }
+    .accordion-title{
+        font-size: 1.25rem;
+    }
+    .accordion-title > span{
+        font-size: 2.25rem;
+    }
+    .accordion-content{
+        font-size: 1rem;
+    }
 }
