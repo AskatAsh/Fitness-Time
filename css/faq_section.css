@@ -1,0 +1,52 @@
+#accordion-container, #accordion-container ul, .accordion-title, .accordion-title > label{
+    display: flex;
+}
+#accordion-container{
+    align-items: center;
+    justify-content: center;
+}
+#accordion-container ul{
+    max-width: 600px;
+    width: 90%;
+    flex-direction: column;
+    gap: 0.875rem;
+}
+#accordion-container ul li{
+    list-style-type: none;
+    border: 2px solid var(--dark-gray-two);
+    border-radius: 0.5rem;
+    padding: 0.875rem 1.25rem;
+}
+#accordion-container ul li input{
+    display: none;
+}
+.accordion-title{
+    color: var(--white-60);
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.accordion-title > span{
+    display: block;
+    margin-left: 1.25rem;
+    font-size: 2.75rem;
+}
+.accordion-content{
+    color: var(--dark-gray);
+    max-height: 0;
+    line-height: 1.75rem;
+    overflow: hidden;
+    transition: max-height 500ms, padding 500ms;
+}
+#accordion-container ul li input:checked + label + .accordion-content{
+    padding: 1rem 0;
+    max-height: 500px;
+}
+#accordion-container ul li label > span{
+    transform: rotate(90deg);
+    transition: transform 300ms ease-out;
+}
+#accordion-container ul li input:checked + label > span{
+    transform: rotate(45deg);
+}
